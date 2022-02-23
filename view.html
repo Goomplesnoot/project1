@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Data</title>
+  </head>
+  <body>
+    <div>
+      <table>
+        <thead>
+          <th>name</th>
+          <th>email</th>
+        </thead>
+        <tbody id="tbody1"></tbody>
+      </table>
+    </div>
+    <script>
+      var user = 0;
+      var tbody = document.getElementById("tbody1");
+
+      function addItemToTable(name, email) {
+        let trow = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+
+        td1.innerHTML = ++user;
+        td2.innerHTML = name;
+        td3.innerHTML = email;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        
+        tbody.appendChild(trow);
+      }
+
+      function AddAllItemsToTable(user){
+          user=0;
+          tbody.innerHTML="";
+
+
+
+
+
+
+
+        
+
+      }
+
+    </script>
+  </body>
+</html>
